@@ -59,7 +59,9 @@ Content-Type: application/json
   "owner_name": "Budi Santoso",
   "note": "Cuci + Repaint"
 }
+```
 **Response**
+```
 {
   "id": 12,
   "name": "Nike Air Max",
@@ -75,7 +77,9 @@ Content-Type: application/json
 **Request**
 ```http
 POST /api/items/{id}/keluar
+```
 **Response**
+```
 {
   "message": "Barang telah keluar",
   "item": {
@@ -89,7 +93,9 @@ POST /api/items/{id}/keluar
 **Request**
 ```http
 POST /api/items/{id}/masuk
+```
 **Response**
+```
 {
   "message": "Barang telah masuk",
   "item": {
@@ -103,7 +109,9 @@ POST /api/items/{id}/masuk
 **Request**
 ```http
 GET /api/items
+```
 **Response**
+```
 [
   {
     "id": 12,
@@ -117,7 +125,9 @@ GET /api/items
 **Request**
 ```http
 GET /api/items?status=Keluar
+```
 **Response**
+```
 [
   {
     "id": 15,
@@ -139,10 +149,13 @@ GET /api/items?status=Keluar
 **Request**
 ```http
 DELETE /api/items/12
+```
 **Response**
+```
 { "message": "Item berhasil dihapus" }
 ```
 🧩 Struktur Folder Proyek
+```
 shoe-laundry-api/
 ├── api/
 │   └── index.js          # Entry point untuk Vercel
@@ -156,6 +169,7 @@ shoe-laundry-api/
 ├── vercel.json
 ├── .env
 └── README.md
+```
 
 ⚙️ Instalasi & Menjalankan Secara Lokal
 1️⃣ Clone Repository
